@@ -24,6 +24,14 @@ body {
     color: chocolate;
 }
 
+#back-btn {
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #212121;
