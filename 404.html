@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Requested User NOT Found</title>
+    <style>
+        button {
+            padding: 8px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #212121;
+                color: #fff;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: antiquewhite;
+                color: #212121;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>404 | Sorry! User NOT Found 😔</h2>
+    <button onclick="window.location.href = '/'">Go Back</button>
+</body>
+
+</html>
