@@ -2,7 +2,7 @@ const userData = await(await fetch("./data.json")).json()
 const userContainer = document.querySelector("#main");
 
 userData.forEach(user => {
-    const { id, name, email } = user;
+    const { id, name, email, age, city } = user;
 
     const anchor = document.createElement("a");
     // creating elements
@@ -20,5 +20,9 @@ userData.forEach(user => {
 
     anchor.append(showId, showName, showEmail);
 
-    main.append(anchor);
+    userContainer.append(anchor);
+    anchor.addEventListener("click", () => {
+        console.log("clicked");
+        sessionStorage.setItem(`${name}|${id}`, JSON.stringify({ id, name, email, age, city }));
+    })
 });
